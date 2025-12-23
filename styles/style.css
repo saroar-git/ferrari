@@ -176,4 +176,38 @@ section {
   .span2 {
     font-size: 30px;
   }
+
+  /* news */
+  section {
+    margin: 40px 10px;
+  }
+
+  .news {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .news-left {
+    gap: 30px;
+    width: 96%;
+    text-align: left;
+  }
+
+  .news-right img {
+    width: 98%;
+  }
+
+  .news-left h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  .news-desc {
+    font-size: 18px;
+    color: rgb(24, 24, 24);
+  }
+
+  .news-all {
+    margin-top: 150px;
+  }
 }
