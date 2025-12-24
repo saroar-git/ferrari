@@ -168,6 +168,19 @@ svg {
   opacity: 0.6;
 }
 
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background: #000;
+}
+
+.dot1 {
+  padding: 10px;
+  border: 2px solid red;
+  border-radius: 100%;
+}
+
 /* category */
 .category-section {
   background-color: #383838;
@@ -185,7 +198,12 @@ svg {
 .category img {
   width: 100%;
   background-size: cover;
+  /* transition: transform 2s ease; */
 }
+
+/* .category img:hover {
+  transform: scale(1.05);
+} */
 
 .categorydiv {
   position: relative;
