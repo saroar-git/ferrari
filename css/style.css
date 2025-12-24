@@ -69,12 +69,19 @@ nav ul a {
   gap: 15px;
 }
 
+.fa-angle-right {
+  border: 2px solid;
+  padding: 5px 3px;
+  border-radius: 100%;
+}
+
 .span1 {
   font-size: 25px;
 }
 .span2 {
   font-size: 45px;
   text-transform: uppercase;
+  font-weight: 600;
 }
 .banner-btn {
   text-transform: uppercase;
@@ -84,7 +91,7 @@ nav ul a {
 }
 
 /* news */
-section {
+.news-section {
   margin: 80px;
 }
 
@@ -130,10 +137,98 @@ section {
   gap: 25px;
 }
 
+svg {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 100%;
+}
+
 .fa-slash {
   font-size: 30px;
   font-weight: 100;
   transform: rotate(-45deg);
+}
+
+.dash {
+  height: 1px;
+  width: 70px;
+  background: #000;
+  opacity: 0.6;
+}
+
+/* category */
+.category-section {
+  background-color: #383838;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+  padding-bottom: 100px;
+}
+
+.category img {
+  width: 100%;
+  background-size: cover;
+}
+
+.categorydiv {
+  position: relative;
+  color: white;
+}
+
+.catdiv {
+  position: absolute;
+  max-width: 550px;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 90%;
+}
+
+.catspan1 {
+  font-size: 25px;
+}
+
+.catspan {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+.catbtn {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+/* subscribe */
+.subscribe {
+  background-color: #222222;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+.subscribe p {
+  margin-bottom: 25px;
+}
+
+.subscribe button {
+  background-image: linear-gradient(to bottom, #b01e0a, red);
+  padding: 20px 80px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -178,7 +273,7 @@ section {
   }
 
   /* news */
-  section {
+  .news-section {
     margin: 40px 10px;
   }
 
@@ -209,5 +304,31 @@ section {
 
   .news-all {
     margin-top: 150px;
+  }
+
+  /* category */
+  .category {
+    grid-template-columns: 1fr;
+  }
+
+  .catspan {
+    font-size: 30px;
+  }
+
+  .catspan1 {
+    font-size: 20px;
+  }
+
+  .catdiv {
+    max-width: 90%;
+  }
+
+  /* subscribe */
+  .subscribe p {
+    font-size: 18px;
+  }
+
+  .subscribe button {
+    width: 100%;
   }
 }
