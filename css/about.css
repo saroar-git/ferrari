@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* banner */
+nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)),
+    url("../img/about-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 77vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+ul li {
+  list-style: none;
+}
+
+.sm {
+  display: none;
+}
+
+nav div {
+  width: 100%;
+  background-color: #181818;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-size: 15px;
+}
+
+nav img {
+  width: 30px;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.sub-nav {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  padding: 0 50px;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.sub-nav ul {
+  width: auto;
+  display: flex;
+  gap: 20px;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: calc(-50%);
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.svg {
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 100%;
+}
