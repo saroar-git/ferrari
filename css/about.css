@@ -2,18 +2,18 @@
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 /* banner */
 nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3)),
-    url("../img/about-banner.jpg");
+    url("../img/about/about-banner.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 77vh;
   position: relative;
-  overflow: hidden;
   display: flex;
   align-items: flex-start;
 }
@@ -104,17 +104,166 @@ nav ul a {
 }
 
 /* dna section */
-
 .dna {
   margin: 50px 0;
   padding: 20px 50px;
 }
 
-.dna div p {
+.dnap {
   text-align: center;
-  font-size: 20px;
-  max-width: 45%;
+  font-size: 22px;
+  max-width: 47%;
   margin: 0 auto;
+}
+
+.dna h2 {
+  margin: 80px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  text-align: left;
+  max-width: 350px;
+}
+
+.card h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.title {
+  color: red;
+  margin-bottom: 50px;
+}
+
+.stat-row {
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: red;
+  margin: 20px 0 50px;
+  font-size: 14px;
+}
+
+.stat-row .label {
+  text-transform: uppercase;
+}
+
+.stat-row .line {
+  flex-grow: 1;
+  height: 1px;
+  width: 100px;
+  background-color: red;
+}
+
+/* people */
+.people-card {
+  background-image: url("../img/about/people.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  padding: 50px;
+}
+
+.people-card button {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  height: 80px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: none;
+  border-right: 3px solid red;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.people-card button span {
+  border: 2px solid;
+  padding: 3px 6px;
+  border-radius: 100%;
+}
+
+.people-card h2 {
+  max-width: 300px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.people-card p {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+/* subscribe */
+.subscribe {
+  background-color: #222222;
+  padding: 60px;
+  text-align: center;
+  color: white;
+}
+
+.subscribe p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn1,
+.btn2 {
+  background-color: transparent;
+  padding: 20px 80px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  width: 250px;
+}
+
+.btn1 {
+  background-image: linear-gradient(to bottom, #b01e0a, red);
+}
+
+.btn2 {
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-image: linear-gradient(#b01e0a);
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* footer */
@@ -220,7 +369,7 @@ hr {
 @media (max-width: 768px) {
   nav {
     overflow-x: hidden;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     width: 100%;
     justify-content: space-between;
@@ -250,6 +399,77 @@ hr {
 
   .sub-nav {
     display: none;
+  }
+
+  /* dna section */
+  .dna {
+    margin: 50px 0;
+    padding: 20px;
+  }
+
+  .dnap {
+    text-align: justify;
+    font-size: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .dna h2 {
+    margin: 80px 20px 50px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  /* people */
+  .people-card {
+    height: 90vh;
+    padding: 20px;
+  }
+
+  .people-card button {
+    right: 50%;
+    bottom: 10px;
+    width: 90%;
+    translate: calc(50%);
+    height: 80px;
+    border: none;
+    border-right: 2px solid red;
+  }
+
+  .people-card button span {
+    border: 2px solid;
+    padding: 3px 6px;
+    border-radius: 100%;
+  }
+
+  .people-card h2 {
+    font-size: 30px;
+  }
+  .people-card p {
+    max-width: 500px;
+    margin-top: 20px;
+  }
+
+  /* subscribe */
+  .subscribe {
+    padding: 60px 20px;
+  }
+  .subscribe p {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .btns {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn1,
+  .btn2 {
+    width: 100%;
   }
 
   /* footer */
@@ -319,5 +539,9 @@ hr {
     justify-content: center;
     text-align: center;
     gap: 25px 20px;
+  }
+
+  .stat-row {
+    margin: 20px 0 50px;
   }
 }
