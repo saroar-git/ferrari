@@ -147,18 +147,13 @@ nav ul a {
   display: block;
 }
 
-.title {
-  color: red;
-  margin-bottom: 50px;
-}
-
 .stat-row {
   max-width: 250px;
   display: flex;
   align-items: center;
   gap: 15px;
   color: red;
-  margin: 20px 0 50px;
+  padding: 20px 0 50px;
   font-size: 14px;
 }
 
@@ -220,6 +215,75 @@ nav ul a {
 .people-card p {
   max-width: 500px;
   margin-top: 20px;
+}
+
+/* history */
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+
+.history-left {
+  background-color: black;
+  width: 50%;
+  height: 90vh;
+  padding: 50px;
+}
+
+.left-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 75%;
+}
+
+.left-title h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  max-width: 400px;
+}
+
+.left-title p {
+  margin: 20px 0;
+  max-width: 400px;
+}
+
+.left-title button {
+  text-transform: uppercase;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-title button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.history-right {
+  width: 50%;
+  height: 100%;
+}
+
+.history-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* subscribe */
@@ -448,9 +512,45 @@ hr {
   .people-card h2 {
     font-size: 30px;
   }
+
   .people-card p {
     max-width: 500px;
     margin-top: 20px;
+  }
+
+  .history {
+    position: relative;
+    height: auto;
+    min-height: 80vh;
+    display: block;
+  }
+
+  .history-left {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    z-index: 2;
+    padding: 90px 20px;
+  }
+
+  .history-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .left-title {
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .left-title h2 {
+    font-size: 30px;
+    margin-top: -50px;
   }
 
   /* subscribe */
